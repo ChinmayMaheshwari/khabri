@@ -32,7 +32,7 @@ const Navbar = () => {
             {links.map((link) => {
               const { id, url, text } = link;
               return (
-                <li key={id} onMouseOver={() => console.log("hi")}>
+                <li key={id}>
                   <a href={url}>{text}</a>
                 </li>
               );

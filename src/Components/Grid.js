@@ -9,7 +9,7 @@ const GridLayout = ({ headline }) => {
       <h1>{headline}</h1>
       <div
         id="mainContent"
-        className="container"
+        className="grid-container"
         style={{
           margin: "1rem",
           width: "80vw",
@@ -33,7 +33,13 @@ const GridLayout = ({ headline }) => {
               src="https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg"
               alt=""
             />
-            <p style={{ color: "white", fontWeight: "bold" }}>
+            <p
+              style={{
+                color: "white",
+                fontWeight: "bold",
+                fontSize: "0.25rem",
+              }}
+            >
               {" "}
               रोड स्थित सीएमएस ऑडिटोरियम में मोहनलालगंज के सांसद कौशल किशोर के
               द्वारा चलाए जा

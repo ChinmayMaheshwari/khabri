@@ -69,7 +69,7 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
   scroll-padding-top: var(--top-spacing);
-  margin: var(--top-spacing) auto;
+  margin-top: var(--top-spacing);
 }
 ul {
   list-style-type: none;
@@ -392,4 +392,14 @@ article.lastSlide {
 }
 article.nextSlide {
   transform: translateX(100%);
+}
+.news-image {
+  width: 70vw;
+  height: 70vh;
+}
+
+.news-main {
+  text-align: center;
+  width: 70vw;
+  margin: auto;
 }
