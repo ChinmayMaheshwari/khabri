@@ -13,7 +13,7 @@ export const links = [
   },
   {
     id: 3,
-    url: "/projects",
+    url: "/#जिला-जवार",
     text: "जिला-जवार",
   },
   {

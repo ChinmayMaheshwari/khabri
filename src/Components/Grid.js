@@ -2,13 +2,16 @@ import React from "react";
 
 const GridLayout = ({ headline }) => {
   return (
-    <div style={{ margin: "5rem auto", width: "80vw", textAlign: "center" }}>
+    <div
+      style={{ margin: "5rem auto", width: "80vw", textAlign: "center" }}
+      id={"#".concat(headline)}
+    >
       <h1>{headline}</h1>
       <div
         id="mainContent"
         className="container"
         style={{
-          margin: "3rem",
+          margin: "1rem",
           width: "80vw",
           display: "grid",
           gridTemplateColumns: "repeat(3, 1fr)",
@@ -18,14 +21,23 @@ const GridLayout = ({ headline }) => {
       >
         {[1, 2, 3, 4, 5].map((article) => (
           <div
-            style={{ textAlign: "center", width: "20vw", background: "blue" }}
+            style={{
+              textAlign: "center",
+              width: "20vw",
+              background: "blue",
+              overflow: "hidden",
+            }}
           >
             <img
-              style={{ width: "200px" }}
+              className="person-img"
               src="https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg"
               alt=""
             />
-            <p>News</p>
+            <p style={{ color: "white", fontWeight: "bold" }}>
+              {" "}
+              रोड स्थित सीएमएस ऑडिटोरियम में मोहनलालगंज के सांसद कौशल किशोर के
+              द्वारा चलाए जा
+            </p>
           </div>
         ))}
       </div>
