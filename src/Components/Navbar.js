@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
-import { FaBars } from "react-icons/fa";
-import { links, social } from "./data";
-import logo from "./logo.svg";
+import { FaBars, FaFacebook, FaInstagram } from "react-icons/fa";
+import { links } from "../data";
+import { FaYoutube } from "react-icons/fa";
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -40,16 +40,23 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* <ul className="social-icons">
-          {social.map((socialIcon) => {
-            const { id, url, icon } = socialIcon;
-            return (
-              <li key={id}>
-                <a href={url}>{icon}</a>
-              </li>
-            );
-          })}
-        </ul> */}
+        <ul className="social-icons">
+          <li>
+            <a href="youtube.com">
+              <FaYoutube />
+            </a>
+          </li>
+          <li>
+            <a href="youtube.com">
+              <FaFacebook />
+            </a>
+          </li>
+          <li>
+            <a href="youtube.com">
+              <FaInstagram />
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
   );

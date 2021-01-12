@@ -1,14 +1,17 @@
-import "./App.css";
-import Navbar from "./Navbar";
-import DemoCarousel from "./Slider";
-import SecondaryNavbar from "./SecondaryNavbar";
+import Navbar from "./Components/Navbar";
+import SecondaryNavbar from "./Components/SecondaryNavbar";
+import Slider from "./Components/Slider";
+import GridLayout from "./Components/Grid";
 
 function App() {
   return (
     <>
       <Navbar />
       <SecondaryNavbar />
-      <DemoCarousel />
+      <Slider />
+      <GridLayout headline="जिला-जवार" />
+      <GridLayout headline="पढ़ाई-खिलाई" />
+      <GridLayout headline="खेल-सिनेमा" />
     </>
   );
 }
