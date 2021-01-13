@@ -200,6 +200,7 @@ nav {
 }
 .nav-search {
   float: right;
+  margin-top: 1.5rem;
 }
 .nav-search-input {
   width: 30vw;
@@ -252,6 +253,10 @@ nav {
   }
   .social-icons a:hover {
     color: var(--clr-primary-7);
+  }
+  .youtube-video iframe {
+    width: 50vw;
+    height: 70vh;
   }
 }
 .sticky {
@@ -399,7 +404,10 @@ article.nextSlide {
 }
 
 .news-main {
-  text-align: center;
+  /* text-align: center; */
   width: 70vw;
   margin: auto;
+}
+.youtube-video iframe {
+  width: 100%;
 }

@@ -5,35 +5,58 @@ function SingleNews() {
     <div>
       <div style={{ marginLeft: "1rem" }}>
         <p>
-          <a href="">Home</a> &gt; <a href="">Sports</a> &gt;{" "}
-          <a href="">current</a>
+          <a href="">होम</a> &gt; <a href="">खेल</a> &gt;{" "}
+          <a href="">
+            अयोध्या विवादित ढांचा विध्वंस केस : बरी करने के खिलाफ आज HC में
+            सुनवाई
+          </a>
         </p>
       </div>
       <div className="news-main">
         <img
           className="news-image"
-          src="https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg"
+          src="https://etvbharatimages.akamaized.net/etvbharat/prod-images/768-512-10222125-thumbnail-3x2-dddjlllllllllllllllllll---copy.jpg"
           alt=""
         />
-        <h2>Aaj Tiwari ko kutta kata</h2>
-        <div style={{ background: "navy", textAlign: "left" }}>
-          <p style={{ color: "red" }}>First Paragraph</p>
+        <h2>
+          अयोध्या विवादित ढांचा विध्वंस केस : बरी करने के खिलाफ आज HC में सुनवाई
+        </h2>
+        <div
+          style={{
+            background: "navy",
+            textAlign: "left",
+            margin: "2rem",
+            padding: "1rem",
+          }}
+        >
+          <h4 style={{ color: "white" }}>
+            अयोध्या के विवादित ढांचा विध्वंस मामले में लाल कृष्ण आडवाणी, मुरली
+            मनोहर जोशी समेत सभी 32 दोषियों को बरी किए जाने के खिलाफ दायर याचिका
+            पर आज सुनवाई करेगा.लखनऊ : इलाहाबाद हाईकोर्ट अयोध्या के विवादित ढांचा
+            विध्वंस मामले में लाल कृष्ण आडवाणी, मुरली मनोहर जोशी समेत सभी 32
+            दोषियों को बरी किए जाने के खिलाफ दायर याचिका पर आज सुनवाई करेगा.
+          </h4>
         </div>
-        {["paragraph 2", "paragraph 3"].map((para) => {
+        {[
+          "यह याचिका आठ जनवरी को अयोध्या निवासी हाजी महबूब अहमद और सैयद अखलाक अहमद की ओर से दाखिल की गई है. याचिका पर सुनवाई उच्च न्यायालय की लखनऊ खंडपीठ द्वारा की जाएगी. दो अयोध्या निवासियों की ओर से अधिवक्ता व ऑल इंडिया मुस्लिम पर्सनल लॉ बोर्ड के कार्यकारी सदस्य जफरयाब जिलानी द्वारा दायर याचिका को मंगलवार को न्यायमूर्ति राकेश श्रीवास्तव की पीठ के समक्ष सूचीबद्ध किया गया.",
+          "जिलानी बाबरी मस्जिद एक्शन कमेटी के संयोजक भी हैं. जिलानी ने कहा कि उन्हें अदालत का रुख इसलिए करना पड़ा क्योंकि पिछले साल आए इस मामले में फैसले के खिलाफ सीबीआई ने अब तक अपील दाखिल नहीं की है. याचिका में विवादित ढांचा विध्वंस मामले के 30 सितम्बर 2020 के सीबीआई अदालत के फैसले को चुनौती देते हुए पूर्व उप प्रधानमंत्री लाल कृष्ण आडवाणी , तत्कालीन मुख्यमंत्री कल्याण सिंह, भाजपा के वरिष्ठ नेता मुरली मनोहर जोशी , उमा भारती ,विनय कटियार सहित सभी 32 अभियुक्तों को बरी करने के विशेष अदालत के फैसले को गलत व तथ्यों के विपरीत बताया गया है.",
+        ].map((para) => {
           return (
-            <div>
-              <p>{para}</p>
+            <div style={{ margin: "2rem" }}>
+              <h4>{para}</h4>
               <br />
             </div>
           );
         })}
-        <iframe
-          title="youtube-video"
-          style={{ width: "60vw" }}
-          width="420"
-          height="315"
-          src="https://www.youtube.com/embed/tgbNymZ7vqY"
-        ></iframe>
+        <div className="youtube-video">
+          <iframe
+            src="https://www.youtube.com/embed/E7wJTI-1dvQ"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+            title="video"
+          />
+        </div>
       </div>
     </div>
   );

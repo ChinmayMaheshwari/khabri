@@ -5,7 +5,7 @@ function Category() {
     <div>
       <div>
         <p>
-          <a href="">Home</a> > <a href="">Sports</a>
+          <a href="">Home</a> &gt; <a href="">Sports</a>
         </p>
       </div>
     </div>
